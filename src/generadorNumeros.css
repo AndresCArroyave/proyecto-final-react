@@ -1,0 +1,97 @@
+.body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom right, #ece8e8, #ecebeb);
+}
+
+.container {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #be3d3d;
+  text-align: center;
+}
+
+.numberCellsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.numberCell {
+  margin: 5px;
+  text-align: center;
+}
+
+.input {
+  width: 40px;
+  height: 20px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #f0f323;
+  color: rgb(7, 6, 6);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.disabledButton {
+  background-color: #ccc;
+  color: #666;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: not-allowed;
+  margin: 5px;
+}
+
+.generateButton {
+  width: 200px;
+  height: 50px;
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+  border-radius: 30px;
+  border: 1px solid #8f9092;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.restartButton {
+  height: 50px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  border-radius: 30px;
+  color: #047a49;
+  transition: all 0.5s ease-in-out;
+}
+
+.restartButton:hover {
+  box-shadow: 1px 1px 200px #03f081;
+  color: #fff;
+  border: none;
+}
+
+.restartButton:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
